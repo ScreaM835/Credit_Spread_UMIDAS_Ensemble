@@ -1,7 +1,6 @@
 # Advanced Ensemble U-MIDAS (Python package)
 
-This repository is a package-quality refactor of the `V1_ENSEMBLE_LEARNING.ipynb` research notebook.  
-It implements a walk-forward (expanding window) **ensemble U-MIDAS** pipeline for panel forecasting of credit spread levels.
+This repository implements a walk-forward (expanding window) **ensemble U-MIDAS** pipeline for panel forecasting of credit spread levels.
 
 ## What the package provides
 
