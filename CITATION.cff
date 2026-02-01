@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it."
+title: "Advanced Ensemble U-MIDAS"
+version: "0.1.0"
+date-released: 2026-02-01
+license: MIT
+authors:
+  - family-names: "Research"
+    given-names: "Engineering"
+repository-code: "https://example.com/umidas-ensemble"

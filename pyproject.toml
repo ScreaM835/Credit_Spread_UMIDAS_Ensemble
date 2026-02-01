@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "umidas-ensemble"
+version = "0.1.0"
+description = "Advanced Ensemble U-MIDAS: walk-forward mixed-frequency panel forecasting with stacking."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Research Engineering", email = "research@example.com"},
+]
+keywords = ["nowcasting", "MIDAS", "ensemble", "credit spreads", "mixed frequency", "walk-forward"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=1.5",
+  "scikit-learn>=1.2",
+  "scipy>=1.9",
+  "openpyxl>=3.1",
+  "tqdm>=4.66",
+  "threadpoolctl>=3.1",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+boosting = [
+  "xgboost>=2.0",
+  "lightgbm>=4.0; platform_system != 'Darwin'",  # optional; platform guard is conservative
+]
+docs = [
+  "sphinx>=7.2",
+  "sphinx-rtd-theme>=2.0",
+  "myst-parser>=2.0",
+  "sphinx-autodoc-typehints>=1.25",
+]
+dev = [
+  "pytest>=7.4",
+  "ruff>=0.6.0",
+  "black>=24.0",
+]
+
+[project.scripts]
+umidas-ensemble = "umidas_ensemble.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

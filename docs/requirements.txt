@@ -1,0 +1,1 @@
+# Read the Docs will install the project with the [docs] extra via readthedocs.yml.
