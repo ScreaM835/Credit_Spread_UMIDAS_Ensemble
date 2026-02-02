@@ -5,6 +5,6 @@ version: "0.1.0"
 date-released: 2026-02-01
 license: MIT
 authors:
-  - family-names: "Research"
-    given-names: "Engineering"
+  - family-names: "Chung"
+    given-names: "Jonathan"
 repository-code: "https://example.com/umidas-ensemble"
