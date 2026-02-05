@@ -1,4 +1,4 @@
-# Advanced Ensemble U-MIDAS (Python package)
+# Advanced Ensemble U-MIDAS
 
 This repository implements a walk-forward (expanding window) **ensemble U-MIDAS** pipeline for panel forecasting of credit spread levels.
 
